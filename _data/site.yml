@@ -1,0 +1,64 @@
+hero:
+  title_line1: "We don't build structures."
+  title_line2: "We make them work."
+  subtitle: "High-performance admixture solutions engineered for concrete producers in Turkey and beyond."
+
+problems:
+  - title: "Unstable cement"
+    desc: "Variability in raw materials affects consistency."
+  - title: "Long transport time"
+    desc: "Slump loss and setting issues during transport."
+  - title: "Bleeding & segregation"
+    desc: "Poor surface quality and reduced durability."
+  - title: "Inconsistent performance"
+    desc: "Concrete behaves differently every time."
+
+approach:
+  steps:
+    - number: "01"
+      title: "Understand"
+      desc: "We analyze your materials, environment and process to understand your concrete."
+    - number: "02"
+      title: "Identify"
+      desc: "We find the real issue, not just the symptoms."
+    - number: "03"
+      title: "Adjust"
+      desc: "We tailor admixture formulation to your specific conditions."
+    - number: "04"
+      title: "Optimize"
+      desc: "We test, refine and ensure consistent results on site."
+  note: "Every batching plant is different. That's why we don't offer standard solutions."
+
+solutions:
+  - title: "Hot Weather Concrete"
+    desc: "Maintain workability and stability under high temperature conditions."
+  - title: "Long Transport Concrete"
+    desc: "Keep slump consistent over extended time and distance."
+  - title: "High Strength Concrete"
+    desc: "Achieve reliable strength without compromising workability."
+  - title: "Unstable Cement"
+    desc: "Adapt admixture performance to variable cement quality."
+  - title: "Pumping Issues"
+    desc: "Improve flowability and reduce blockage risks during pumping."
+  - title: "Bleeding & Segregation"
+    desc: "Enhance mix stability and improve surface quality."
+
+regions:
+  - name: "İstanbul & Marmara"
+    desc: "Major construction and infrastructure projects."
+  - name: "Ankara & İç Anadolu"
+    desc: "High-performance concrete for demanding applications."
+  - name: "İzmir & Aegean"
+    desc: "Durable solutions for coastal and industrial projects."
+  - name: "Other Regions"
+    desc: "Strong technical support wherever you build in Türkiye."
+
+footer_headline: "Tell us your problem."
+footer_headline_accent: "We'll help you solve it."
+footer_subtext: "Work with us to improve your concrete performance — where it matters most: on site."
+
+contact:
+  email: "info@samchemical.co"
+  phone: "+90 212 123 45 67"
+  address: "Istanbul, Türkiye"
+  whatsapp: "https://wa.me/902121234567"

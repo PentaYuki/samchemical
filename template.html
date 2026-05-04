@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAM Chemical | Concrete Performance Solutions</title>
+  <meta name="description" content="High-performance admixture solutions engineered for concrete producers in Turkey and beyond." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="SAM Chemical home"><img src="assets/sam-logo.png" alt="SAM Chemical"></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#approach">APPROACH</a>
+      <a href="#solutions">SOLUTIONS</a>
+      <a href="#work">WORK</a>
+      <a href="#insights">INSIGHTS</a>
+      <a href="#about">ABOUT US</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-green" href="#contact">CONTACT US</a>
+      <div class="lang">
+        <button id="langBtn" aria-haspopup="true" aria-expanded="false">EN <span>⌄</span></button>
+        <div class="lang-menu" id="langMenu" role="menu">
+          <a href="#" role="menuitem">EN</a>
+          <a href="#" role="menuitem">TR</a>
+        </div>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#approach">Approach</a>
+    <a href="#solutions">Solutions</a>
+    <a href="#work">Work</a>
+    <a href="#insights">Insights</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>{{hero.title_line1}}<br><span>{{hero.title_line2}}</span></h1>
+        <div class="green-line"></div>
+        <p>{{hero.subtitle}}</p>
+        <a class="scroll-cue" href="#problems"><span>↓</span> SCROLL DOWN</a>
+      </div>
+    </section>
+
+    <section class="problem-bar" id="problems">
+      {{problems}}
+    </section>
+
+    <section class="approach" id="approach">
+      <div class="section-inner">
+        <p class="eyebrow">APPROACH</p>
+        <h2>How we work</h2>
+        <div class="green-line"></div>
+        <div class="steps">
+          {{steps}}
+        </div>
+        <p class="approach-note">{{approach.note}}</p>
+      </div>
+    </section>
+
+    <section class="solutions" id="solutions">
+      <div class="section-inner">
+        <p class="eyebrow">SOLUTIONS</p>
+        <h2>What we solve</h2>
+        <div class="green-line"></div>
+        <div class="solution-grid">
+          {{solutions}}
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="section-inner work-grid">
+        <div class="work-copy">
+          <p class="eyebrow">WORK</p>
+          <h2>Where we work</h2>
+          <div class="green-line"></div>
+          <p>We support ready-mix and concrete producers across Turkey with reliable solutions and local technical service.</p>
+        </div>
+        {{regions}}
+      </div>
+    </section>
+
+    <section class="insights" id="insights">
+      <div class="section-inner insights-grid">
+        <div class="insights-copy">
+          <p class="eyebrow">INSIGHTS</p>
+          <h2>Technical knowledge<br>that works in the real world.</h2>
+          <p>Practical articles, case studies and guides from our laboratory and the field.</p>
+          <a class="btn btn-outline" href="#">VIEW ALL INSIGHTS →</a>
+        </div>
+        <article class="insight-card"><img src="assets/slump-test.jpg" alt="Slump test"><div><small>GUIDE</small><h3>How to reduce slump loss in long transport</h3><a href="#">Read more →</a></div></article>
+        <article class="insight-card"><img src="assets/raw-materials.jpg" alt="Admixture raw materials"><div><small>TECHNICAL NOTE</small><h3>Admixtures vs. cement variability</h3><a href="#">Read more →</a></div></article>
+        <article class="insight-card"><img src="assets/concrete-pouring.jpg" alt="Concrete pouring"><div><small>CASE STUDY</small><h3>Pumping solution for high-rise project in Istanbul</h3><a href="#">Read more →</a></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <h2>{{footer.headline}}<br><span>{{footer.headline_accent}}</span></h2>
+        <p>{{footer.subtext}}</p>
+        <img src="assets/sam-logo-footer.png" alt="SAM Chemical" class="footer-logo">
+      </div>
+      <form class="contact-form">
+        <div class="form-row"><input type="text" placeholder="Your Name"><input type="email" placeholder="Email Address"></div>
+        <input type="text" placeholder="Company">
+        <textarea placeholder="Tell us about your problem"></textarea>
+        <button type="button" class="btn btn-green">SEND MESSAGE →</button>
+      </form>
+      <div class="whatsapp-box">
+        <div class="whatsapp-icon">☘</div>
+        <h3>Chat on WhatsApp</h3>
+        <p>Get quick answers from our team.</p>
+        <a class="btn btn-dark" href="{{contact.whatsapp}}" target="_blank" rel="noreferrer">CHAT NOW →</a>
+      </div>
+      <div class="footer-links">
+        <div><h4>LINKS</h4><a>Approach</a><a>Solutions</a><a>Work</a><a>Insights</a><a>About Us</a></div>
+        <div><h4>SOLUTIONS</h4><a>Hot Weather Concrete</a><a>Long Transport Concrete</a><a>High Strength Concrete</a><a>Unstable Cement</a><a>Pumping Solutions</a></div>
+        <div><h4>CONTACT</h4>
+          <p>{{contact.email}}</p>
+          <p>{{contact.phone}}</p>
+          <p>{{contact.address}}</p>
+        </div>
+      </div>
+      <p class="copyright">© 2024 SAM Chemical. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

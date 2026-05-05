@@ -1,4 +1,6 @@
 node_modules/
+tina-admin/
+.tina/__generated__/
 .DS_Store
 *.log
 .env

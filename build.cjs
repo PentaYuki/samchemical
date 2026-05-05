@@ -1,5 +1,5 @@
+// build.cjs – renamed từ build.js để tương thích với "type":"module" trong package.json
 const fs = require('fs');
-const path = require('path');
 const yaml = require('js-yaml');
 
 const data = yaml.load(fs.readFileSync('_data/site.yml', 'utf8'));

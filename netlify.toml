@@ -1,9 +1,21 @@
 [build]
-  command = "node build.js"
+  # TinaCMS build trước, sau đó chạy build script của mình
+  command = "npm run build"
   publish = "."
+
+# Env vars cần set trong Netlify dashboard:
+# NEXT_PUBLIC_TINA_CLIENT_ID  → lấy từ Tina Cloud (app.tina.io)
+# TINA_TOKEN                  → lấy từ Tina Cloud
 
 [[headers]]
   for = "/admin/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+
+# Bảo vệ TinaCMS admin
+[[headers]]
+  for = "/tina-admin/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"

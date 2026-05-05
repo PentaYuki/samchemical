@@ -1,10 +1,15 @@
 {
   "name": "samchemical-website",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "build": "node build.js"
+    "dev": "tinacms dev -c \"node build.cjs\"",
+    "build": "tinacms build && node build.cjs",
+    "tina": "tinacms dev"
   },
   "dependencies": {
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.0",
+    "tinacms": "latest",
+    "@tinacms/cli": "latest"
   }
 }

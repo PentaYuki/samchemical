@@ -1,0 +1,7 @@
+/admin/*
+  X-Frame-Options = SAMEORIGIN
+  X-Content-Type-Options = nosniff
+
+/tina-admin/*
+  X-Frame-Options = SAMEORIGIN
+  X-Content-Type-Options = nosniff

@@ -1,8 +1,8 @@
 import { defineConfig } from "tinacms";
 
 export default defineConfig({
-  // Lấy branch từ env (Netlify tự inject BRANCH)
-  branch: process.env.GITHUB_BRANCH || process.env.BRANCH || "main",
+  // Lấy branch từ env (Cloudflare Pages dùng CF_PAGES_BRANCH)
+  branch: process.env.CF_PAGES_BRANCH || process.env.GITHUB_BRANCH || process.env.BRANCH || "main",
 
   // Lấy từ Tina Cloud dashboard → tạo project → copy vào Netlify env vars
 clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || "d2c3f8d6-cf21-486e-804b-2938bab2d0e8",

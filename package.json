@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "tinacms dev -c \"node build.cjs\"",
-    "build": "tinacms build && node build.cjs",
-    "tina": "tinacms dev"
+    "build": "node build.cjs",
+    "build:tina": "tinacms build && node build.cjs"
   },
   "dependencies": {
     "js-yaml": "^4.1.0",

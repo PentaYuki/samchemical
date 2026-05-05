@@ -5,8 +5,8 @@ export default defineConfig({
   branch: process.env.GITHUB_BRANCH || process.env.BRANCH || "main",
 
   // Lấy từ Tina Cloud dashboard → tạo project → copy vào Netlify env vars
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || null,
-  token: process.env.TINA_TOKEN || null,
+clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || "d2c3f8d6-cf21-486e-804b-2938bab2d0e8",
+token: process.env.TINA_TOKEN || "e978b515d388645c7c4b07de2b3534b7cfdae503",
 
   build: {
     // Dùng "tina-admin" để không đè lên /admin của Decap CMS

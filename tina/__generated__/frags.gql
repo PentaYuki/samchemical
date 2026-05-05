@@ -1,0 +1,44 @@
+fragment SiteDataParts on SiteData {
+  __typename
+  hero {
+    __typename
+    title_line1
+    title_line2
+    subtitle
+  }
+  problems {
+    __typename
+    title
+    desc
+  }
+  approach {
+    __typename
+    steps {
+      __typename
+      number
+      title
+      desc
+    }
+    note
+  }
+  solutions {
+    __typename
+    title
+    desc
+  }
+  regions {
+    __typename
+    name
+    desc
+  }
+  footer_headline
+  footer_headline_accent
+  footer_subtext
+  contact {
+    __typename
+    email
+    phone
+    address
+    whatsapp
+  }
+}
